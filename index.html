@@ -422,6 +422,16 @@
       height: 260px !important;
     }
   }
+  /* Cennik mobile - jedna kolumna, rowne paddingi */
+  @media (max-width: 768px) {
+    div[style*="grid-template-columns:repeat(2,1fr)"] {
+      grid-template-columns: 1fr !important;
+    }
+    div[style*="grid-template-columns:repeat(2,1fr)"] > div {
+      border-right: none !important;
+      padding: 1.5rem 1.2rem !important;
+    }
+  }
 </style>
 </head>
 <body>
